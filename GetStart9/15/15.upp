@@ -1,0 +1,12 @@
+uses
+	CtrlLib,
+	art/BlueBar;
+
+file
+	layouttabs.lay,
+	layoutmain.lay,
+	main.cpp;
+
+mainconfig
+	"" = "GUI";
+

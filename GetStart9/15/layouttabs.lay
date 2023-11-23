@@ -1,0 +1,9 @@
+LAYOUT(Tab1, 400, 300)
+	ITEM(Upp::Button, btnInfo, SetLabel(t_("\vShow info")).LeftPosZ(248, 136).TopPosZ(256, 24))
+	ITEM(Upp::Label, label1, SetLabel(t_("This is a fixed label on Tab 1")).SetAlign(Upp::ALIGN_CENTER).SetFont(Upp::StdFontZ(20).Bold()).SetFrame(Upp::OutsetFrame()).LeftPosZ(40, 332).TopPosZ(24, 196))
+END_LAYOUT
+
+LAYOUT(Tab2, 400, 300)
+	ITEM(Upp::Label, label1, SetLabel(t_("This is a fixed label on Tab 2")).SetAlign(Upp::ALIGN_CENTER).SetFont(Upp::StdFontZ(20).Bold()).SetFrame(Upp::InsetFrame()).LeftPosZ(12, 372).TopPosZ(56, 172))
+END_LAYOUT
+

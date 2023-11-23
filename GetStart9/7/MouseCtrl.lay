@@ -1,0 +1,4 @@
+LAYOUT(GetStart, 496, 332)
+	ITEM(MouseCtrl, mousectrl, Ink(Upp::LtBlue).Paper(Upp::WhiteGray).LeftPosZ(160, 75).TopPosZ(112, 64))
+END_LAYOUT
+

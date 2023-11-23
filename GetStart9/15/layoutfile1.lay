@@ -1,0 +1,9 @@
+LAYOUT(FirstTabLayout, 296, 200)
+	ITEM(Upp::Button, dialog, SetLabel(t_("\vPush to invoke dialog")).LeftPosZ(40, 136).TopPosZ(72, 24))
+	ITEM(Upp::Label, dv___1, SetLabel(t_("This is first layout")).LeftPosZ(40, 124).TopPosZ(24, 21))
+END_LAYOUT
+
+LAYOUT(SecondTabLayout, 400, 200)
+	ITEM(Upp::Label, dv___0, SetLabel(t_("This is second layout")).LeftPosZ(12, 124).TopPosZ(8, 21))
+END_LAYOUT
+

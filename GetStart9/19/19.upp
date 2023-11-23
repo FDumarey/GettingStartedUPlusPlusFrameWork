@@ -1,0 +1,14 @@
+uses
+	Core,
+	PdfDraw,
+	Core/SSL,
+	RichText,
+	CtrlLib,
+	plugin/jpg;
+
+file
+	SignPDF.cpp;
+
+mainconfig
+	"" = "";
+

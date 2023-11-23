@@ -1,0 +1,11 @@
+uses
+	Core,
+	CtrlCore,
+	CtrlLib;
+
+file
+	11.cpp;
+
+mainconfig
+	"" = "";
+

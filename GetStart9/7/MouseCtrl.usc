@@ -1,0 +1,37 @@
+ctrl MouseCtrl //name of the widget class
+{
+	group "GetStart"; // group where widget resides in layout designer
+	
+	GetMinSize() // minimal size in designer
+	{
+		size = GetTextSize("Middle"); // gets size of text
+		size.cy *=2; // doubles the height
+		return size; // returns the size
+	}
+	
+	GetStdSize() // gets the default size
+	{
+		size = GetMinSize(); // gets minimal size
+		size.cx *= 2; // doubles the width
+		return size; // returns the size
+	}
+	
+	Frame SetFrame = BlackFrame() @2; // defines a frame property
+	Font SetFont = StdFont(); // defines a font property
+	Color Ink = :SBlack; // defines an ink color property
+	Color Paper = :SWhite; // defines a paper color property
+	
+	Paint(w) // when painting on the layout designer
+	{
+		rect = GetRect(); // gets the widget rectangle
+		DrawCtrlFrame(w, rect, .SetFrame); // draws a frame
+		w.DrawRect(rect, .Paper); // draws a rectangle
+		txtsize = GetTextSize("Middle", .SetFont); // gets the text size
+		w.DrawText((rect.right + rect.left - txtsize.cx) / 2, 
+		          (rect.bottom + rect.top - txtsize.cy * 2) / 2, 
+		          "---", .SetFont, .Ink); // draws text on upper line
+		w.DrawText((rect.right + rect.left - txtsize.cx) / 2, 
+		          (rect.bottom + rect.top - txtsize.cy) / 2, 
+		          "0:0", .SetFont, .Ink); // draws text on lower line
+	}
+};

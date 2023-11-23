@@ -1,0 +1,11 @@
+LAYOUT(DlgLayout, 200, 160)
+	ITEM(Upp::Label, dv___0, SetLabel(t_("Label:")).LeftPosZ(16, 40).TopPosZ(8, 19))
+	ITEM(Upp::EditString, text, Tip(t_("Enter text value")).LeftPosZ(56, 136).TopPosZ(8, 19))
+	ITEM(Upp::Option, option, SetLabel(t_("Option")).LeftPosZ(16, 56).TopPosZ(36, 16))
+	ITEM(Upp::EditDate, date1, LeftPosZ(16, 176).TopPosZ(60, 19))
+	ITEM(Upp::EditDate, date2, LeftPosZ(16, 176).TopPosZ(84, 19))
+	ITEM(Upp::EditDate, date3, LeftPosZ(16, 176).TopPosZ(108, 19))
+	ITEM(Upp::Button, ok, SetLabel(t_("OK")).LeftPosZ(16, 56).TopPosZ(136, 15))
+	ITEM(Upp::Button, cancel, SetLabel(t_("Cancel")).LeftPosZ(136, 56).TopPosZ(136, 15))
+END_LAYOUT
+

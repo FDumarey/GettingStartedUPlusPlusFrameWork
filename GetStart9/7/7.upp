@@ -1,0 +1,11 @@
+uses
+	CtrlLib;
+
+file
+	MouseCtrl.usc,
+	MouseCtrl.lay,
+	main.cpp;
+
+mainconfig
+	"" = "GUI";
+

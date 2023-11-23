@@ -1,0 +1,10 @@
+uses
+	CtrlLib;
+
+file
+	Events.cpp;
+
+mainconfig
+	"" = "GUI",
+	"" = "GUI X11";
+

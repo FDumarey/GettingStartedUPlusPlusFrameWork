@@ -1,0 +1,9 @@
+LAYOUT(Info, 264, 176)
+	ITEM(Upp::Label, label1, SetLabel(t_("This is information\nin a fixed label widget\nPress OK to close this dialog window")).SetAlign(Upp::ALIGN_CENTER).SetFont(Upp::StdFontZ(13).Italic()).SetFrame(Upp::ThinInsetFrame()).LeftPosZ(8, 240).TopPosZ(8, 120))
+	ITEM(Upp::Button, ok, SetLabel(t_("OK")).LeftPosZ(192, 68).TopPosZ(144, 24))
+END_LAYOUT
+
+LAYOUT(Main, 420, 320)
+	ITEM(Upp::TabCtrl, tab, LeftPosZ(0, 416).TopPosZ(0, 316))
+END_LAYOUT
+

@@ -1,0 +1,12 @@
+uses
+	GLCtrl,
+	CtrlLib,
+	GLDraw;
+
+file
+	main.cpp;
+
+mainconfig
+	"" = "GUI",
+	"" = "GUI X11";
+
