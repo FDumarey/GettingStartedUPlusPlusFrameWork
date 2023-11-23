@@ -1,0 +1,11 @@
+uses
+	Core,
+	MySql;
+
+file
+	schema.sch,
+	MariaDB.cpp;
+
+mainconfig
+	"" = "";
+
