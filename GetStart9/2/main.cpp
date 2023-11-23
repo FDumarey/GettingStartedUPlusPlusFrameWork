@@ -5,7 +5,7 @@ using namespace Upp;
 struct MyApp : TopWindow{ // inherits a struct from TopWindow
 	DropList font_list; // defines a droplist widget variable
 	
-	virtual void Paint(Draw& w) override { // overrides the paint event from TopWindow
+	void Paint(Draw& w) override { // overrides the paint event from TopWindow
 		const String text = "Programming is fun!"; // defines a string variable
 		Font fnt(~font_list, 60); // ~ operator = gets property of droplist, font size 60 pixels
 		w.DrawRect(GetSize(),White); // makes the background white

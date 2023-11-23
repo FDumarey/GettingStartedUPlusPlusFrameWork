@@ -5,13 +5,13 @@ using namespace Upp;
 class MouseCtrl : public Ctrl // defines an inherited control for the widget
 {
 	public:
-		virtual Value GetData() const; // default data get property
-		virtual void SetData(const Value& v); // default set data property
-		virtual void Paint(Draw& w); // to paint the widget
-		virtual void LeftDown(Point, dword); // left mouse click
-		virtual void MiddleDown(Point, dword); // middle mouse click
-		virtual void RightDown(Point, dword); // right mouse click
-		virtual void MouseMove(Point, dword); // mouse move function
+		Value GetData() const override; // default data get property
+		void SetData(const Value& v) override; // default set data property
+		void Paint(Draw& w) override; // to paint the widget
+		void LeftDown(Point, dword) override; // left mouse click
+		void MiddleDown(Point, dword) override; // middle mouse click
+		void RightDown(Point, dword) override; // right mouse click
+		void MouseMove(Point, dword) override; // mouse move function
 		MouseCtrl(); // default constructor
 		MouseCtrl& SetFont(Font f); // SetFont property function
 		MouseCtrl& Ink(Color c); // Ink property function

@@ -19,51 +19,51 @@ struct App : TopWindow // defines app from a windows forms class
             log.GoEnd(); // sets cursor at last position
         }
 
-        virtual void Activate() // overrides activate event
+        void Activate() override // overrides activate event
         {
             Log("Activate event called.");
         }
 
-        virtual void Deactivate() // overrides deactivate event
+        void Deactivate() override // overrides deactivate event
         {
             Log("Deactivate event called.");
         }
 
-        virtual bool Key(dword key, int count) // gets key code and repeat count
+        bool Key(dword key, int count) override // gets key code and repeat count
         {
         	// show key code, repeat index, description
         	Log(Format("Key(%x, %d) ", (int)key, count) + GetKeyDescEx(key)); 
             return false; // goes to parent objects
         }
 
-        virtual void GotFocus() // overrides get focus event
+        void GotFocus() override // overrides get focus event
         {
         	Log("GotFocus event called.");
         }
 
-        virtual void LostFocus() // overrides loose focus event
+        void LostFocus() override // overrides loose focus event
         {
         	Log("LostFocus event called.");
         }
  
-        virtual bool HotKey(dword key) // overrides get hotkey event as top ctrl event
+        bool HotKey(dword key) override // overrides get hotkey event as top ctrl event
         {
         	// show key code and extended description
         	Log(Format("HotKey(%x) ", (int)key) + GetKeyDescEx(key)); 
             return false; // goes until root ctrl
         }
 
-        virtual void ChildGotFocus() // overrides child ctrl got focus
+        void ChildGotFocus() override // overrides child ctrl got focus
         {
         	Log("ChildGotFocus event called.");
         }
 
-        virtual void ChildLostFocus() // overrides child loose focus
+        void ChildLostFocus() override // overrides child loose focus
         {
         	Log("ChildLostFocus event called.");
         }
 
-        virtual void Layout() // overrides change position or size of ctrl
+        void Layout() override // overrides change position or size of ctrl
         {
         	Log("Layout event called.");
         }

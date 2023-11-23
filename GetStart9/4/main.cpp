@@ -5,7 +5,7 @@ using namespace Upp;
 struct MyApp: TopWindow{ // defines a topwindow structure
 	Image image; // defines a bitmap
 	
-	virtual void Paint(Draw& w) override { // overrides the paint method
+	void Paint(Draw& w) override { // overrides the paint method
 		w.DrawRect(GetSize(),Cyan());  // makes the background cyan
 		w.DrawImage(10,10,image); // draws the bitmap
 		w.DrawImage(80,30,image); // draws the bitmap again to see the alpha channel in action

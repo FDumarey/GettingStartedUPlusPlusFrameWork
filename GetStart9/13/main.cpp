@@ -8,8 +8,8 @@ class CachedImage : public ImageMaker // inherits cached image base class
 	public:
 		Color color; // a color member variable
 		int x; // a size member variable
-		virtual String Key() const; // overrides unique identifier
-		virtual Image Make() const; // overrides cached image maker
+		String Key() const override; // overrides unique identifier
+		Image Make() const override; // overrides cached image maker
 };
 
 String CachedImage::Key() const // function to define unique identifier
@@ -46,7 +46,7 @@ Image CreateImage(int x, Color color) // function to create a single image
 class MyApp : public TopWindow // makes an gui application class
 {
 	public:
-		virtual void Paint(Draw& w) // overrides the paint event
+		void Paint(Draw& w) override // overrides the paint event
 		{
 			// take a snapshot of current time
 			auto start = std::chrono::high_resolution_clock::now(); 

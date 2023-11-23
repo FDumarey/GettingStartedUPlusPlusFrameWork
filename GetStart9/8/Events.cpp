@@ -11,55 +11,57 @@ struct App : TopWindow {
 		log.GoEnd(); // goes to last line
 	}
 
-	virtual void MouseEnter(Point p, dword keyflags)
+	void MouseEnter(Point p, dword keyflags) override
 	{
 		Log(Format("MouseEnter(Point(%d, %d), %x)", p.x, p.y, (int)keyflags));
 	}
 	
-	virtual void MouseLeave()
+	void MouseLeave() override
 	{
 		Log("MouseLeave");
 	}
 
-	virtual void MouseMove(Point p, dword keyflags)
+	void MouseMove(Point p, dword keyflags) override
 	{
 		Log(Format("MouseMove(Point(%d, %d), %x)", p.x, p.y, (int)keyflags));
 	}
 
-	virtual void LeftDown(Point p, dword keyflags)
+	void LeftDown(Point p, dword keyflags) override
 	{
 		Log(Format("LeftDown(Point(%d, %d), %x)", p.x, p.y, (int)keyflags));
 	}
 
-	virtual void LeftDouble(Point p, dword keyflags)
+	void LeftDouble(Point p, dword keyflags) override
 	{
 		Log(Format("LeftDouble(Point(%d, %d), %x)", p.x, p.y, (int)keyflags));
 	}
 
-	virtual void LeftTriple(Point p, dword keyflags)
+	void LeftTriple(Point p, dword keyflags) override
 	{
 		Log(Format("LeftTriple(Point(%d, %d), %x)", p.x, p.y, (int)keyflags));
 	}
 	
-	virtual void LeftDrag(Point p, dword keyflags) {
+	void LeftDrag(Point p, dword keyflags) override 
+	{
 		Log(Format("LeftDrag(Point(%d, %d), %x)", p.x, p.y, (int)keyflags));
 	}
 	
-	virtual void LeftHold(Point p, dword keyflags) {
+	void LeftHold(Point p, dword keyflags) override 
+	{
 		Log(Format("LeftHold(Point(%d, %d), %x)", p.x, p.y, (int)keyflags));
 	}
 
-	virtual void LeftRepeat(Point p, dword keyflags)
+	void LeftRepeat(Point p, dword keyflags) override
 	{
 		Log(Format("LeftRepeat(Point(%d, %d), %x)", p.x, p.y, (int)keyflags));
 	}
 
-	virtual void LeftUp(Point p, dword keyflags)
+	void LeftUp(Point p, dword keyflags) override
 	{
 		Log(Format("LeftUp(Point(%d, %d), %x)", p.x, p.y, (int)keyflags));
 	}
 
-	virtual void MouseWheel(Point p, int zdelta, dword keyflags)
+	void MouseWheel(Point p, int zdelta, dword keyflags) override
 	{
 		Log(Format("MouseWheel(Point(%d, %d), %d, %x)", p.x, p.y, zdelta, (int)keyflags));
 	}

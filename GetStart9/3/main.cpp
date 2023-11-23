@@ -5,7 +5,7 @@ using namespace Upp;
 struct MyApp: TopWindow { // defines a class of topwindow
 	Drawing drawing; // sets of drawing operations to form a vector image
 	
-	virtual void Paint(Draw& w) override { // overrides the paint event of topwindow
+	void Paint(Draw& w) override { // overrides the paint event of topwindow
 		w.DrawRect(GetSize(), White()); // paints the background white
 		w.DrawDrawing(10,10,50,60, drawing); // paints the drawing vector within the bounds
 		w.DrawDrawing(100,10,150,100, drawing); // paints the drawing vector within other bounds

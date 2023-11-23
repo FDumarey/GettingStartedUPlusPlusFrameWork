@@ -9,7 +9,7 @@ struct MyApp : TopWindow{ // inherits a form from topwindow
 		w.DrawText(70,10, txt, Roman(30).Bold()); // sets text from parameter
 	}
 	
-	virtual void Paint(Draw& w) override // overrides paint function
+	void Paint(Draw& w) override // overrides paint function
 	{
 		w.DrawRect(GetSize(),White()); // draws white background
 		Drawthings(w, "Normal"); // normal drawing

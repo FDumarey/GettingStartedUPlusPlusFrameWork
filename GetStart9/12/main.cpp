@@ -10,10 +10,10 @@ class MyApp : public TopWindow { // defines a new window form from topwindow
 	public:
 		Image img, img2; // defines two bitmaps
 		FileSel fs; // defines a file selector
-		virtual void Paint(Draw& w); // overrides the ctrl paint function
+		void Paint(Draw& w) override; // overrides the ctrl paint function
 		void Open(); // function to open a file
 		// override the left mouse click and connect to the open function
-		virtual void LeftDown(Point, dword) { Open(); } 
+		void LeftDown(Point, dword) override { Open(); } 
 		typedef MyApp CLASSNAME; // used for callback functions
 		MyApp(); // default constructor
 };

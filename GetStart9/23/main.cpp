@@ -33,7 +33,7 @@ Image GetGoogleMapImage(double center_x, double center_y, int zoom, int cx,
 struct MyApp : TopWindow { // defines a topwindow inherited struct
 	Image img; // defines our image
 	
-	virtual void Paint(Draw& w) { // overrides the paint event
+	void Paint(Draw& w) override { // overrides the paint event
 		w.DrawRect(GetSize(), Gray()); // draws a background gray rectangle
 		w.DrawImage(0,0,img); // draws the image on the ctrl
 	}

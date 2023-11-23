@@ -7,19 +7,19 @@ using namespace Upp;
 #include <Draw/iml.h> // imports the image designer library
 
 struct App : TrayIcon { // inherits our app from the trayicon class
-	virtual void LeftDouble() { // overrides double left click
+	void LeftDouble() override { // overrides double left click
 		Icon(Tray::Icon1()); // switches the tray icon
 		// show some ok dialog with text
 		PromptOK("You double clicked the tray icon or clicked on menu item Info!"); 
 		Icon(Tray::Icon()); // switches the tray icon back to original
 	}
 	
-	virtual void LeftDown() { // overrides left click
+	void LeftDown() override { // overrides left click
 		// show an OS information
 		Info("Tray icon example", "You clicked on the tray icon\n""This is an information"); 
 	}
 
-	virtual void Menu(Bar& bar) { // adds a menu to the tray icon application
+	void Menu(Bar& bar) override { // adds a menu to the tray icon application
 		// add an info bar that calls left double click
 		bar.Add("Info..", [=] {LeftDouble();}); 
 		bar.Separator(); // adds a menu separator

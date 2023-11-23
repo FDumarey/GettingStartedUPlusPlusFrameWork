@@ -7,7 +7,7 @@ using namespace Upp;
 struct OpenGLExample : GLCtrl { // inherits a opengl widget control
 	Point point; // defines a point
 
-	virtual void GLPaint() { // overrides painting the canvas
+	void GLPaint() override { // overrides painting the canvas
 		StdView(); // standard viewport
 		Size sz = GetSize(); // gets window size
 				
@@ -62,7 +62,7 @@ struct OpenGLExample : GLCtrl { // inherits a opengl widget control
 		glViewport(0, 0, (GLsizei)w, (GLsizei)h); // adapts the viewport
 	}
 	
-	virtual void MouseMove(Point p, dword) { // overrides the mouse move
+	void MouseMove(Point p, dword) override { // overrides the mouse move
 		point = p; // sets the point for modifier
 		Refresh(); // calls the paint function
 	}
