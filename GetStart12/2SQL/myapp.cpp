@@ -25,7 +25,7 @@ SKYLARK(HomePage, "") // defines handler homepage to url /myapp = root
 }
 
 struct MyApp : SkylarkApp { // makes a class inherited from SkylarkApp
-	virtual void WorkThread(); // overrides the WorkThread function
+	void WorkThread() override; // overrides the WorkThread function
     MyApp() { // default constructor
         root = "myapp"; // sets the root URL
         threads = 1; // databases do not like threads
