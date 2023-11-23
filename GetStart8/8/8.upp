@@ -1,0 +1,9 @@
+uses
+	Core;
+
+file
+	8.cpp;
+
+mainconfig
+	"" = "";
+

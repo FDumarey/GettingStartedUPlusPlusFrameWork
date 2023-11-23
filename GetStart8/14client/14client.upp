@@ -1,0 +1,10 @@
+uses
+	Core,
+	Core/SSL;
+
+file
+	14client.cpp;
+
+mainconfig
+	"" = "";
+

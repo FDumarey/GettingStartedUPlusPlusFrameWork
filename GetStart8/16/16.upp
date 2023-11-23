@@ -1,0 +1,9 @@
+uses
+	Core;
+
+file
+	16.cpp;
+
+mainconfig
+	"" = "";
+
