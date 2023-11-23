@@ -1,0 +1,14 @@
+uses
+	Turtle,
+	art/BlueBar,
+	art/BlueBar,
+	Turtle,
+	Turtle;
+
+file
+	TurtleTest.h,
+	main.cpp;
+
+mainconfig
+	"" = "TURTLEGUI";
+

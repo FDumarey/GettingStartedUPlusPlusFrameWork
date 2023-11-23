@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<title>#TITLE</title>
+<body>
+MyValue: $MyValue<br>
+MyRawValue: $MyRawValue<br>
+MyRawValue2: $raw(MyRawValue2)<br>
+<br>MyArray:<br>
+$for(i in MyArray)
+    $i._index. $i<br>
+$endfor
+<br>MyMap:<br>
+$for(i in MyMap)
+    $i._index. $i._key: $i<br>
+$endfor
+<a href=$HomePage>Link to the HomePage</a><br>
+$for(i in ["param_test", 123, "param_test"])
+	<a href=$Param(i)>Param test: $i</a><br>
+$endfor
+</body>
+</html>

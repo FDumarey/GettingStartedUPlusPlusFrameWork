@@ -1,0 +1,13 @@
+uses
+	Core,
+	MySql,
+	Skylark;
+
+file
+	index.witz,
+	myapp.sch,
+	myapp.cpp;
+
+mainconfig
+	"" = "";
+

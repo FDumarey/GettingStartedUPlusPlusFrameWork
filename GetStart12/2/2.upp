@@ -1,0 +1,17 @@
+uses
+	Core,
+	Skylark;
+
+file
+	index2.witz,
+	index.witz,
+	submit.witz,
+	post.witz,
+	get.witz,
+	session.witz,
+	ajax.witz,
+	2.cpp;
+
+mainconfig
+	"" = "";
+
